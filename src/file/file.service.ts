@@ -65,6 +65,7 @@ export class FileService {
 	}
 
 	async addDirectory(dto: DirectoryDto) {
+		console.log(path)
 		const uploadFolder = `${path}/uploads/${dto.folder}`
 		await ensureDir(uploadFolder)
 	}
